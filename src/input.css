@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Yekan";
+  --font-sans: "Yekan", sans-serif;
 }
 
 @theme {
