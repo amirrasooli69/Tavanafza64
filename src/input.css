@@ -3,7 +3,7 @@
 @theme {
   --font-sans: "Yekan";
 }
-/* 
+
 @theme {
   --animate-slideDown: slideDown 3s ease forwards;
   @keyframes slideDown {
@@ -47,10 +47,6 @@
   }
 }
 
-.look {
-  animation: name linear timing-function delay iteration-count direction fill-mode;
-}
-
 @theme {
   --animate-slideleft: slideleft 1s ease-in-out forwards;
   @keyframes slideleft {
@@ -77,9 +73,9 @@
       opacity: 1;
     }
   }
-} */
+}
 
-/* @theme {
+@theme {
   --animate-rounded: rounded 1200s ease infinite;
   @keyframes rounded {
     0%,
@@ -90,4 +86,4 @@
       transform: rotate(3600deg);
     }
   }
-} */
+}
