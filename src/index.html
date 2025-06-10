@@ -5,52 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/svg/TAS 1.svg" type="image/x-icon">
-    <title>تــوان‌ افــزا</title>
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="./font.css">
+    <title>تــوان‌ افــزا</title>
 </head>
 
-<body class="min-w-[393px]">
-    <header class="min-w-[393px] h-[60px] lg:w-full lg:h-[120px] bg-[#1F3A56] z-10 relative">
+<body class="min-w-[300px]">
+    <header class="relative z-10 h-[60px] min-w-[300px] bg-[#1F3A56] lg:h-[120px] lg:w-full">
         <nav
-            class="flex justify-between items-center max-w-full h-[60px] lg:h-[120px] lg:mx-[100px] mx-[40px] bg-white relative top-[30px] lg:top-[60px] rounded-[25px] animate-slideDown ">
-            <div class="flex items-center h-[60px] lg:h-[120px] px-1.5">
-                <img class="lg:size-[100px] mx-1.5" src="./assets/svg/TAS 1.svg" alt="TAS Logo">
-                <h1 class="text-[20px] text-[#050C9C] xl:text-[60px] lg:text-[30px]">تــوان‌ افــزا</h1>
+            class="relative top-[30px] flex h-[60px] max-w-full items-center justify-between rounded-[25px] bg-white mx-[40px] lg:top-[60px] lg:mx-[100px] lg:h-[120px]">
+            <!-- Navbar Logo -->
+            <div class="flex items-center h-[60px] px-1.5 lg:h-[120px] animate-visibleity">
+                <img class="mx-1.5 lg:size-[100px]" src="./assets/svg/TAS 1.svg" alt="TAS Logo">
+                <h1 class="text-[20px] font-medium text-[#050C9C] lg:text-[30px] xl:text-[60px]">تــوان‌ افــزا</h1>
             </div>
-            <div class="lg:hidden">
-                <button>
-                    <img class="px-6 pt-0" src="./assets/svg/Hamburger menu.svg" alt="Hamburger menu">
-                </button>
+            <!-- mobile menu -->
+            <div class="flex flex-row-reverse items-center justify-between">
+                <input type="checkbox" id="hamburger" class="peer hidden">
+                <label for="hamburger">
+                    <img class="px-6 pt-0 animate-visibleity lg:hidden" src="./assets/svg/Hamburger menu.svg"
+                        alt="Hamburger">
+                </label>
+                <div
+                    class="fixed top-0 right-0 z-50 flex h-full flex-col translate-x-[300%] bg-[#1f3a5681] backdrop-blur-[12px] transition-transform delay-75 duration-700 ease-in-out peer-checked:translate-x-0 *:px-3.5 *:py-4 *:pl-10 *:font-semibold *:text-white *:text-[unset] *:lg:text-[20px] *:xl:text-[24px] md:w-2/5">
+                    <div class="relative mb-7">
+                        <label for="hamburger">
+                            <img class="absolute left-2.5 top-4" src="./assets/svg/cross-svgrepo-com.svg" alt="cross">
+                        </label>
+                    </div>
+                    <a href="./index.html">صفحه نخست</a>
+                    <a href="">سیستم های کنترل دستی</a>
+                    <a href="">درباره ما</a>
+                    <a href="">ارتباط با ما</a>
+                </div>
             </div>
-            <div class="hidden lg:flex items-center justify-between px-[15px] lg:px-[5] gap-4">
-                <a class="xl:text-[24px] lg:text-[20px] mim-w-full transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-[#1F3A56F2] hover:text-white px-2 rounded-[10px]  text-center"
+            <!-- desktop menu -->
+            <div
+                class="hidden px-[15px] lg:flex items-center justify-between lg:px-[5] gap-4 *:mim-w-full *:rounded-[10px] *:px-2 *:text-center *:transition *:delay-150 *:duration-300 *:ease-in-out *:focus:scale-90 *:focus:transition-all *:focus:bg-[#1F3A56F2] *:focus:text-yellow-300 animate-visibleity">
+                <a class="xl:text-[24px] lg:text-[20px] hover:-translate-y-1 hover:scale-110 hover:bg-[#1F3A56F2] hover:text-white"
                     href="./index.html">صفحه نخست</a>
-                <a class="xl:text-[24px] lg:text-[20px] mim-w-full transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-[#1F3A56F2] hover:text-white px-2 rounded-[10px]  text-center"
-                    href="">سیستم های کنترل دستی</a>
-                <a class="xl:text-[24px] lg:text-[20px] mim-w-full transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-[#1F3A56F2] hover:text-white px-2 rounded-[10px]  text-center"
+                <div class="flex  hover:scale-110 ">
+                    <a class="xl:text-[24px] lg:text-[20px]"
+                        href="">سیستم های کنترل دستی</a>
+                    <img class="mr-1 pt-1" src="./assets/svg/arrow-down-angle-svgrepo-com.svg" alt="">
+                </div>
+                <a class="xl:text-[24px] lg:text-[20px] hover:-translate-y-1 hover:scale-110 hover:bg-[#1F3A56F2] hover:text-white"
                     href="">درباره ما</a>
-                <a class="xl:text-[24px] lg:text-[20px] mim-w-full transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-[#1F3A56F2] hover:text-white px-2 rounded-[10px]  text-center"
+                <a class="xl:text-[24px] lg:text-[20px] hover:-translate-y-1 hover:scale-110 hover:bg-[#1F3A56F2] hover:text-white"
                     href="">ارتباط با ما</a>
             </div>
         </nav>
     </header>
-    <main class="relative min-w-[393px]">
+    <main class="relative min-w-[300px]">
+        <!-- Banner background -->
         <section>
-            <img class="min-w-[393px] lg:w-full mt-15 lg:mt-20 animate-rounded"
+            <img class="mt-15 min-w-[300px] animate-rounded lg:mt-20 lg:w-full max-[340px]:mt-8 max-[310px]:mt-5"
                 src="./assets/svg/c91fe2e717b41181407148e476dc6ef3 (1).svg" alt="">
             <div
-                class="m-auto absolute w-full top-5 lg:top-15 xl:top-30 flex items-center justify-center flex-col gap-6 lg:gap-12">
+                class="absolute top-0 m-auto flex w-full flex-col items-center justify-center gap-6 max-[340px]:top-5 max-[310px]:top-8 lg:gap-12 lg:top-10 xl:top-25 max-[340px]:gap-2 max-[310px]:gap-1">
                 <h1
-                    class="text-center text-[44px] sm:text-[58px] min-w-[393px] lg:text-[72px] xl:text-[82px] text-[#1A22C7] animate-slideDown5">
-                    کارگاه توان
-                    افزا</h1>
+                    class="text-center font-medium text-[44px] text-[#1A22C7] max-[340px]:text-[28px] sm:text-[58px] md:font-semibold lg:text-[72px] xl:text-[82px] xl:font-bold animate-slideDown5">
+                    کــارگــاه تـوان افــزا
+                </h1>
                 <p id="typewriter"
                     class="text-[22px] lg:text-[62px] sm:text-[42px] xl:text-[65px] text-center lg:mx-30 mx-10 pr-2"></p>
             </div>
         </section>
-        <section class="absolute top-10 w-full">
-            <img class="w-full absolute -top-120 max-[400px]:-top-28 max-[430px]:-top-32 max-[480px]:-top-45 max-[540px]:-top-58 max-[640px]:-top-68 max-[690px]:-top-60 max-[760px]:-top-70 max-[840px]:-top-88 max-[920px]:-top-98 max-[990px]:-top-105 max-[1024px]:-top-110  max-[1100px]:-top-80 max-[1200px]:-top-90 max-[1280px]:-top-100 max-[1360px]:-top-110 max-[1440px]:-top-120 max-[1550px]:-top-140 max-[1750px]:-top-130"
+        <!-- Banner background -->
+        <section class="absolute top-10 w-full min-w-[300px] max-[310px]:top-12">
+            <img class="absolute w-full -top-120 max-[340px]:-top-24 max-[400px]:-top-28 max-[430px]:-top-32 max-[480px]:-top-45 max-[540px]:-top-58 max-[640px]:-top-68 max-[690px]:-top-60 max-[760px]:-top-70 max-[840px]:-top-80 max-[920px]:-top-98 max-[990px]:-top-105 max-[1024px]:-top-110 max-[1100px]:-top-80 max-[1200px]:-top-90 max-[1280px]:-top-100 max-[1360px]:-top-110 max-[1440px]:-top-120 max-[1550px]:-top-140 max-[1750px]:-top-130"
                 src="./assets/svg/Frame 1.svg" alt="">
         </section>
     </main>
