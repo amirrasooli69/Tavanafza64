@@ -45,3 +45,28 @@
   src: url("./assets/fonts/YekanBakh-Fat.woff2");
   font-weight: 800;
 }
+@font-face {
+  font-family: "Sahel";
+  src: url("./assets/fonts/Sahel-Black.woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Tanha";
+  src: url("./assets/fonts/Tanha.woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "BMitra";
+  src: url("./assets/fonts/BMitra.woff");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "BYagut";
+  src: url("./assets/fonts/BYagut.woff");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "BTraffic";
+  src: url("./assets/fonts/BTraffic.woff");
+  font-weight: 100;
+}

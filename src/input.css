@@ -5,8 +5,39 @@
 }
 
 @theme {
+  --font-Sahel: "Sahel", sans-serif;
+}
+
+@theme {
+  --font-Tanha: "Tanha", sans-serif;
+}
+@theme {
+  --font-BMitra: "BMitra", sans-serif;
+}
+@theme {
+  --font-BYagut: "BYagut", sans-serif;
+}
+@theme {
+  --font-BTraffic: "BTraffic", sans-serif;
+}
+
+@theme {
   --animate-slideDown: slideDown 3s ease forwards;
   @keyframes slideDown {
+    0% {
+      transform: translateY(-150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+} */
+
+@theme {
+  --animate-slideDown2: slideDown2 0.5s ease forwards;
+  @keyframes slideDown2 {
     0% {
       transform: translateY(-150%);
       opacity: 0;
@@ -19,7 +50,7 @@
 }
 
 @theme {
-  --animate-visibleity: visibleity 5s ease forwards;
+  --animate-visibleity: visibleity 2s ease forwards;
   @keyframes visibleity {
     0% {
       opacity: 0;
@@ -28,11 +59,7 @@
       opacity: 1;
     }
   }
-}
-
-.las{
-  display: none;
-}
+} */
 
 @theme {
   --animate-visibleity2: visibleity2 5s ease forwards;
@@ -91,7 +118,6 @@
     }
   }
 }
-
 @theme {
   --animate-slideright: slideright 1s ease-in-out forwards;
   @keyframes slideright {
@@ -117,4 +143,4 @@
       transform: rotate(3600deg);
     }
   }
-} 
+}
